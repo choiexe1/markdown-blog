@@ -17,5 +17,7 @@
 <hr class="my-8" />
 
 <article class="mx-auto container">
-	<svelte:component this={data.content} />
+	<div class="all-prose mb-10">
+		<svelte:component this={data.content} />
+	</div>
 </article>

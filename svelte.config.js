@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-static';
+import adapter from '@sveltejs/adapter-auto';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import { mdsvex } from 'mdsvex';
 
@@ -13,10 +13,7 @@ const config = {
 	],
 
 	kit: {
-		adapter: adapter(),
-		prerender: {
-			entries: ['/post/1', '/post/s']
-		}
+		adapter: adapter()
 	}
 };
 export default config;
